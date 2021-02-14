@@ -1,0 +1,60 @@
+// 0 to 425 mobile
+//   to 768  table
+//   to 1024 laptop
+//   to 1440 l-laptop
+//   to 2560   4k
+// 1536
+// For 49px
+//          max-width                  min-width      
+// <-0 ----------------------49----------------------- 100>
+
+// @media screen and (min-width:1645px) {
+//     body{
+//         background: red;
+//         margin: 0 auto;
+//         width: 70%;
+//     }
+// }
+
+// @media screen and (min-width:425px){
+//     .hide-for-desktop{
+//         display: none;
+//     }
+// }
+// @media screen and (min-width:425px) and (max-width:768px){
+//     .btn{
+//         display: none;
+//     }
+// }
+
+// @media screen and (max-width:425px){
+//     .hide-for-mobile{
+//         display: none;
+//     }
+// }
+
+
+
+// 640px, 1024px, 1400px
+$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
+
+// 639px, 1023px, 1399px
+$breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.4375em");
+
+
+@mixin breakpoint-up($size) {
+
+    // 0 - 639(if screen between then show the property)
+    @media screen and (max-width:map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+
+    // 640px - onword (if screen between then show the property)
+    @media screen and (min-width:map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
