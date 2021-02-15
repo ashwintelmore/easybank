@@ -42,19 +42,16 @@ $breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
 $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.4375em");
 
 
-@mixin breakpoint-up($size) {
 
-    // 0 - 639(if screen between then show the property)
-    @media screen and (max-width:map-get($breakpoints-up, $size)) {
-        @content;
+@mixin breakpoint-up($size){
+   // 640px - onword (if screen between then show the property)
+    @media (min-width: map-get($breakpoints-up, $size)){
+      @content;
     }
-}
-
-@mixin breakpoint-down($size) {
-
-    // 640px - onword (if screen between then show the property)
-    @media screen and (min-width:map-get($breakpoints-down, $size)) {
-        @content;
+  }
+       // 0 - 1024px(if screen between then show the property)
+  @mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoints-down, $size)){
+      @content;
     }
-}
-
+  }

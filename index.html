@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>Frontend Mentor | Easybank landing page</title>
@@ -17,31 +17,31 @@
 
   <!-- primary css file -->
   <link rel="stylesheet" href="dist/css/styles.css">
- 
+
 </head>
 
 <body>
 
   <header class="header">
     <div class="overlay fade-mode"></div>
-    <nav class="flex flex-ai-c flex-jc-sb container">
-      <a href="/" class="header_logo" >
+    <nav class="flex flex-ai-c flex-jc-sb container container__for-mobile ">
+      <a href="/" class="header_logo">
         <img src="images/logo.svg" alt="logo">
       </a>
-      <a id="btnhamburger" href="#" class="header_menu hide-for-desktop">
+      <a id="btnhamburger" href="#" class="header_menu hide-for-mobile ">
         <span></span>
         <span></span>
         <span></span>
       </a>
-       
-      <div class="flex flex-ai-c flex-jc-c menu hide-for-mobile">
+
+      <div class="flex flex-ai-c flex-jc-c menu hide-for-desktop">
         <a href="/">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
         <a href="#">Blog</a>
         <a href="#">Careers</a>
       </div>
-      <a href="#" class="btn hide-for-mobile">Request Invite</a>
+      <a href="#" class="btn hide-for-desktop">Request Invite</a>
     </nav>
     <div class="mobile-menu fade-mode">
       <a href="/">Home</a>
@@ -52,13 +52,30 @@
     </div>
   </header>
 
+  <section class="hero">
+    <div class="container">
+      <div class="hero__image"></div>
+      <div class="hero__text container__for-mobile">
+        <h1>Next generation digital banking</h1>
+        <p>Take your financial life online. Your Easybank account will be a one-stop-shop
+          for spending, saving, budgeting, investing, and much more.
+        </p>
+        <a href="#" class="btn">Request Invite</a>
+      </div>
+    </div>
+  </section>
 
-  Next generation digital banking
+  <section class="features">
+    <div class="container">
+      
+    </div>
+  </section>
 
-  Take your financial life online. Your Easybank account will be a one-stop-shop
-  for spending, saving, budgeting, investing, and much more.
 
-  Request Invite
+
+
+
+
 
 
 
@@ -120,7 +137,7 @@
 
   © Easybank. All Rights Reserved
 
-  
+
 
   <script src="app/js/script.js"></script>
 </body>

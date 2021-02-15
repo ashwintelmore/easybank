@@ -1,9 +1,10 @@
 .header {
+    background: $White;
     nav {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
         position: relative;
-        background: $White;
+       
     }
 
     &.open {
@@ -79,7 +80,7 @@
             transition: color 300ms ease-in-out;
 
             &:not(:last-child) {
-                margin-right: 1rem;
+                margin-right: 1.8rem;
             }
 
             &::after {
