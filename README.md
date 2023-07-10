@@ -8,7 +8,7 @@ This portfolio website is designed to exhibit my proficiency in CSS and SASS. It
 
 ## Demo Link
 
-You can access a live demo of the portfolio website [here](insert-demo-link). Feel free to explore the different sections and interact with the site to see my CSS and SASS skills in action.
+You can access a live demo of the portfolio website [here](https://easybank-c3nl.onrender.com). Feel free to explore the different sections and interact with the site to see my CSS and SASS skills in action.
 
 ## Technologies Used
 
