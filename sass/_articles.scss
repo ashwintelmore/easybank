@@ -1,0 +1,77 @@
+.article {
+    background: $Very-Light-Gray;
+    width: 100%;
+    &__heading {
+        text-align: center;
+        @include breakpoint-up(medium){
+            text-align: left;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        // @include breakpoint-up(medium){
+        //     display: flex;
+        //     flex-wrap: wrap;
+        // }
+
+        .card {
+            background-color: $White;
+            width: 100%;
+            margin: 1.2rem 0;
+            transform: scale(1);
+            transition: transform 300ms ease-in-out;
+            box-shadow: -1px -1px 10px grey;
+            border-radius: 7px;
+
+            @include breakpoint-up(medium){
+                margin: 1.2rem 1rem;
+                flex: 1 0 35%;
+            }
+            @include breakpoint-up(large){
+               flex: 1 0 0%;
+            }
+
+            .img-1{
+                background-image: url(/images/image-currency.jpg);
+            }
+            .img-2{
+                background-image: url(/images/image-confetti.jpg);
+            }
+            .img-3{
+                background-image: url(/images/image-plane.jpg);
+            }
+            .img-4{
+                background-image: url(/images/image-restaurant.jpg);
+            }
+
+            .card_bg_img{
+                height: 12rem;
+              
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 7px;
+            }
+
+
+            .card__content {
+                padding: 1.3625rem;
+
+                h3 {
+                    transition: color 300ms ease-in-out;
+                }
+
+            }
+
+            &:hover {
+                transform: scale(1.03);
+
+                h3 {
+                    color: $Lime-Green;
+                }
+            }
+        }
+    }
+}

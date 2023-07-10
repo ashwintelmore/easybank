@@ -1,0 +1,30 @@
+.features{
+    text-align: center;
+
+    @include breakpoint-up(medium){
+       
+        text-align: left;
+    }
+    &__text{
+        p{
+            max-width: 38.375rem;
+        }
+    }
+    &__grid{
+
+        @include breakpoint-up(medium){
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .grid-item{
+            @include breakpoint-up(medium){
+                flex: 0 0 50%;
+            }
+            @include breakpoint-up(large){
+                flex: 1 0 0%;
+            }
+        }
+
+    }
+}
