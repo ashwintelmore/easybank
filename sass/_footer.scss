@@ -1,0 +1,47 @@
+.footer {
+    text-align: center;
+    background: $dark-blue;
+
+    .grid{
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            // text-align: left;
+        }
+    }
+
+    .social-icons {
+        margin-top: 2.0625rem;
+
+        img {
+
+            margin-right: .93rem;
+        }
+    }
+
+    &__col {
+        .footer-brand{
+            color: $White;
+        }
+        .btn {
+            display: inline;
+            
+        }
+        p{
+            // text-align: end;
+            margin-top: 2.625rem;
+        }
+
+        a {
+            display: block;
+
+            margin-top: .625rem;
+            color: $Grayish-Blue;
+
+            &:hover {
+                color: $Lime-Green;
+            }
+        }
+
+    }
+}
